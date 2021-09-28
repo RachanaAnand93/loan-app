@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Loan Calculator</h1>
+    <div class="data">
+      <table style="margin: 0px auto">
+        <tr>
+          <th>Total Amount(€) :</th>
+          <td>
+            <input type="number" id="amount" />
+          </td>
+        </tr>
+        <tr>
+          <th>Interest Rate(%) :</th>
+          <td>
+            <input type="number" id="interest" />
+          </td>
+        </tr>
+        <tr>
+          <th>Total Months :</th>
+          <td>
+            <input type="number" id="month" />
+          </td>
+        </tr>
+      </table>
+      <button id="calculate">Calculate</button>
+      <div>
+        <p>
+          Monthly Payment(€) : <span id="final"></span> <br />
+          Total amount Payment (€) :
+          <span id="amountPaid"></span>
+          <br />
+          Total interest :
+          <span id="interestPaid"></span>
+        </p>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
